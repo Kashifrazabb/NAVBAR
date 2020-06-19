@@ -98,7 +98,7 @@ nav > ul > li > .active,
     top: 10%;
     left: 5%;
     width: 90%;
-    height: calc(100vh - 20%);
+    height: calc(100vh - 30%);
     padding: 20px 0 0 20px;
     border-radius: 15px;
   }
