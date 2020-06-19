@@ -50,14 +50,14 @@ nav > ul > li > .active,
     pointer-events: none;
   }
   nav ul > li:hover > a,
-  .dropdown-item:hover {
+  .dropdown-item:hover,.active {
     color: #d9232d;
     background: transparent;
   }
 }
 
 @media (hover: none) {
-  a:hover,.dropdown-item:hover {
+  a:hover,.dropdown-item:hover,.active {
     color: #d9232d;
   }
 }
