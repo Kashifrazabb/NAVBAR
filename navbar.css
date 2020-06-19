@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  user-select: none;
+  background: #fff;
+}
+
+.nav-wrapper {
+  padding: 0 10%;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("/img/hamburger.svg");
+}
+
+.navbar-toggler-icon-close {
+  background-image: url("/img/cancel.svg");
+  width: 30px;
+  height: 30px;
+  background-size: 20px;
+}
+
+nav ul > li > a {
+  color: #556270;
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+nav > ul > li > .active,
+.navbar-brand {
+  color: #d9232d;
+}
+
+
+@media (hover: hover) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -10px;
+  }
+  .dropdown-toggle:active {
+    pointer-events: none;
+  }
+  nav ul > li:hover > a,
+  .dropdown-item:hover {
+    color: #d9232d;
+    background: transparent;
+  }
+}
+
+@media (hover: none) {
+  a:hover,.dropdown-item:hover {
+    color: #d9232d;
+  }
+}
+
+@media (max-width:1110px){
+  .nav-wrapper {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .dropdown-menu {
+    border: none;
+    background: transparent;
+  }
+  .navbar-brand span {
+    font-size: 30px;
+  }
+
+  .collapsing {
+    transition: none !important;
+    display: none;
+  }
+  
+  #nav {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  #nav ul {
+    background: #fff;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: calc(100vh - 20%);
+    padding: 20px 0 0 20px;
+    border-radius: 15px;
+  }
+
+  .navbar-toggler-icon {
+    z-index: 1;
+  }
+  
+  .btn,
+  .navbar-brand {
+    z-index: -2;
+  }
+  
+}
